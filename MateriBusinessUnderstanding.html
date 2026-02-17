@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Business Understanding (Pemahaman Bisnis) &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'MateriBusinessUnderstanding';</script>
+    <link rel="canonical" href="/Pendata/MateriBusinessUnderstanding.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="MateriDataUnderstanding.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpeg" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.jpeg" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Business Understanding (Pemahaman Bisnis)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/magdalenajovita61-eng/Pendata" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/magdalenajovita61-eng/Pendata/issues/new?title=Issue%20on%20page%20%2FMateriBusinessUnderstanding.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/MateriBusinessUnderstanding.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Business Understanding (Pemahaman Bisnis)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-business-objectives">1. Determine Business Objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-mengidentifikasi-masalah-bisnis">A. Mengidentifikasi masalah bisnis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-tujuan-yang-ingin-dicapai">B. Menentukan tujuan yang ingin dicapai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menyesuaikan-proyek-dengan-kebutuhan-bisnis">C. Menyesuaikan proyek dengan kebutuhan bisnis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-arah-dan-fokus-proyek">D. Menentukan arah dan fokus proyek</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-menentukan-kriteria-keberhasilan-proyek">E. Menentukan kriteria keberhasilan proyek</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-situation">2. Assess Situation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-memahami-kondisi-organisasi-saat-ini">A. Memahami kondisi organisasi saat ini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-mengetahui-sumber-daya-yang-tersedia">B. Mengetahui sumber daya yang tersedia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-mengetahui-ketersediaan-data">C. Mengetahui ketersediaan data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-mengidentifikasi-risiko-dan-kendala">D. Mengidentifikasi risiko dan kendala</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-menentukan-kelayakan-proyek">E. Menentukan kelayakan proyek</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-data-mining-goals">3.Determine Data Mining Goals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-menerjemahkan-tujuan-bisnis-menjadi-tujuan-analisis-data">A. Menerjemahkan tujuan bisnis menjadi tujuan analisis data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-apa-yang-ingin-dicari-atau-diprediksi-dari-data">B. Menentukan apa yang ingin dicari atau diprediksi dari data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menentukan-jenis-metode-data-mining-yang-akan-digunakan">C. Menentukan jenis metode data mining yang akan digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-hasil-yang-diharapkan-dari-proses-data-mining">D. Menentukan hasil yang diharapkan dari proses data mining</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-memastikan-tujuan-data-mining-sesuai-dengan-tujuan-bisnis">E. Memastikan tujuan data mining sesuai dengan tujuan bisnis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-project-plan">4. Produce Project Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-menentukan-langkah-langkah-yang-akan-dilakukan">A. Menentukan langkah-langkah yang akan dilakukan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-waktu-pelaksanaan-proyek">B. Menentukan waktu pelaksanaan proyek</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menentukan-sumber-daya-yang-dibutuhkan">C. Menentukan sumber daya yang dibutuhkan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-metode-dan-teknik-yang-akan-digunakan">D.Menentukan metode dan teknik yang akan digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-memastikan-proyek-berjalan-terarah-dan-terorganisir">E. Memastikan proyek berjalan terarah dan terorganisir</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="business-understanding-pemahaman-bisnis">
+<h1>Business Understanding (Pemahaman Bisnis)<a class="headerlink" href="#business-understanding-pemahaman-bisnis" title="Link to this heading">#</a></h1>
+<p>adalah tahap awal dalam sebuah proyek analisis data yang bertujuan untuk memahami masalah yang terjadi dalam suatu organisasi atau perusahaan, serta menentukan tujuan yang ingin dicapai. Pada tahap ini, fokus utamanya adalah memahami kebutuhan bisnis terlebih dahulu sebelum mulai mengolah data.</p>
+<p>Tahap Business Understanding dimulai dengan mengidentifikasi masalah yang ada. Misalnya, sebuah toko mengalami penurunan penjualan, maka perlu dipahami apa penyebabnya dan apa yang ingin diperbaiki. Setelah itu, ditentukan tujuan yang jelas, seperti meningkatkan penjualan atau mengetahui kebiasaan pelanggan.</p>
+<p>Selanjutnya, tujuan bisnis tersebut diubah menjadi tujuan analisis data. Artinya, data akan digunakan sebagai alat untuk membantu menyelesaikan masalah tersebut. Contohnya, jika tujuan bisnis adalah meningkatkan penjualan, maka tujuan analisis datanya bisa berupa mencari tahu produk yang paling diminati atau memprediksi produk yang akan laris di masa depan.</p>
+<p>Selain itu, pada tahap ini juga dibuat rencana kerja yang berisi langkah-langkah yang akan dilakukan, data yang dibutuhkan, serta cara untuk mencapai tujuan tersebut. Dengan adanya perencanaan ini, proses analisis dapat berjalan lebih terarah dan sesuai dengan kebutuhan.</p>
+<p>Business Understanding sangat penting karena menjadi dasar dari seluruh proses analisis data. Jika tahap ini tidak dilakukan dengan baik, maka hasil analisis bisa tidak sesuai dengan kebutuhan bisnis dan tidak memberikan manfaat yang diharapkan.</p>
+<p>Business Understanding sendiri memiliki 4 Proses di antara lain:</p>
+<section id="determine-business-objectives">
+<h2>1. Determine Business Objectives<a class="headerlink" href="#determine-business-objectives" title="Link to this heading">#</a></h2>
+<p>Tujuan dari proses Determine Business Objectives sendiri adalah untuk menetapkan dan memahami secara jelas tujuan bisnis yang ingin dicapai dari suatu proyek. Pada tahap ini, berfokus untuk mengetahui masalah yang sedang dihadapi organisasi dan hasil apa yang diharapkan sebagai solusinya.</p>
+<p>Untuk lebih detailnya, tujuan dari proses Determine Business Objectives adalah:</p>
+<section id="a-mengidentifikasi-masalah-bisnis">
+<h3>A. Mengidentifikasi masalah bisnis<a class="headerlink" href="#a-mengidentifikasi-masalah-bisnis" title="Link to this heading">#</a></h3>
+<p>Dimana kita mengetahui masalah utama yang terjadi, misalnya penurunan penjualan, berkurangnya pelanggan, atau rendahnya kinerja suatu sistem.</p>
+</section>
+<section id="b-menentukan-tujuan-yang-ingin-dicapai">
+<h3>B. Menentukan tujuan yang ingin dicapai<a class="headerlink" href="#b-menentukan-tujuan-yang-ingin-dicapai" title="Link to this heading">#</a></h3>
+<p>Dengan menetapkan target atau hasil yang diharapkan, seperti meningkatkan penjualan, meningkatkan kepuasan pelanggan, atau meningkatkan efisiensi kerja.</p>
+</section>
+<section id="c-menyesuaikan-proyek-dengan-kebutuhan-bisnis">
+<h3>C. Menyesuaikan proyek dengan kebutuhan bisnis<a class="headerlink" href="#c-menyesuaikan-proyek-dengan-kebutuhan-bisnis" title="Link to this heading">#</a></h3>
+<p>Yaitu memastikan bahwa proyek analisis atau data mining yang dilakukan benar-benar membantu menyelesaikan masalah bisnis, bukan hanya sekadar mengolah data.</p>
+</section>
+<section id="d-menentukan-arah-dan-fokus-proyek">
+<h3>D. Menentukan arah dan fokus proyek<a class="headerlink" href="#d-menentukan-arah-dan-fokus-proyek" title="Link to this heading">#</a></h3>
+<p>Yaitu memberikan panduan yang jelas tentang apa yang harus dilakukan sehingga proyek berjalan terarah dan tidak keluar dari tujuan utama.</p>
+</section>
+<section id="e-menentukan-kriteria-keberhasilan-proyek">
+<h3>E. Menentukan kriteria keberhasilan proyek<a class="headerlink" href="#e-menentukan-kriteria-keberhasilan-proyek" title="Link to this heading">#</a></h3>
+<p>Yaitu menentukan bagaimana keberhasilan proyek akan diukur, misalnya peningkatan penjualan sebesar 20% atau penurunan jumlah pelanggan yang berhenti berlangganan.</p>
+</section>
+</section>
+<section id="assess-situation">
+<h2>2. Assess Situation<a class="headerlink" href="#assess-situation" title="Link to this heading">#</a></h2>
+<p>Tujuan proses Assess Situation dalam Business Understanding adalah untuk memahami kondisi dan situasi organisasi saat ini sebelum memulai proyek analisis data. Tahap ini membantu memastikan bahwa proyek dapat dilakukan dengan baik dan sesuai dengan keadaan yang ada.</p>
+<p>Secara rinci, tujuan dari proses Assess Situation adalah:</p>
+<section id="a-memahami-kondisi-organisasi-saat-ini">
+<h3>A. Memahami kondisi organisasi saat ini<a class="headerlink" href="#a-memahami-kondisi-organisasi-saat-ini" title="Link to this heading">#</a></h3>
+<p>Mengetahui bagaimana keadaan bisnis sekarang, termasuk masalah yang sedang terjadi dan proses yang berjalan.</p>
+</section>
+<section id="b-mengetahui-sumber-daya-yang-tersedia">
+<h3>B. Mengetahui sumber daya yang tersedia<a class="headerlink" href="#b-mengetahui-sumber-daya-yang-tersedia" title="Link to this heading">#</a></h3>
+<p>Mengidentifikasi sumber daya yang dimiliki, seperti data, teknologi, tenaga kerja, dan waktu yang tersedia untuk proyek.</p>
+</section>
+<section id="c-mengetahui-ketersediaan-data">
+<h3>C. Mengetahui ketersediaan data<a class="headerlink" href="#c-mengetahui-ketersediaan-data" title="Link to this heading">#</a></h3>
+<p>Memastikan apakah data yang dibutuhkan tersedia, lengkap, dan dapat digunakan untuk analisis.</p>
+</section>
+<section id="d-mengidentifikasi-risiko-dan-kendala">
+<h3>D. Mengidentifikasi risiko dan kendala<a class="headerlink" href="#d-mengidentifikasi-risiko-dan-kendala" title="Link to this heading">#</a></h3>
+<p>Mengetahui hambatan yang mungkin terjadi, seperti data yang tidak lengkap, keterbatasan waktu, atau keterbatasan teknologi.</p>
+</section>
+<section id="e-menentukan-kelayakan-proyek">
+<h3>E. Menentukan kelayakan proyek<a class="headerlink" href="#e-menentukan-kelayakan-proyek" title="Link to this heading">#</a></h3>
+<p>Memastikan apakah proyek bisa dilakukan dan memiliki peluang untuk berhasil sesuai tujuan bisnis.</p>
+</section>
+</section>
+<section id="determine-data-mining-goals">
+<h2>3.Determine Data Mining Goals<a class="headerlink" href="#determine-data-mining-goals" title="Link to this heading">#</a></h2>
+<p>Tujuan proses Determine Data Mining Goals dalam Business Understanding adalah untuk mengubah tujuan bisnis menjadi tujuan teknis yang dapat dicapai melalui proses data mining atau analisis data. Tahap ini memastikan bahwa analisis yang dilakukan benar-benar membantu menyelesaikan masalah bisnis yang sudah ditentukan sebelumnya.</p>
+<p>Secara rinci, tujuan dari proses Determine Data Mining Goals adalah:</p>
+<section id="a-menerjemahkan-tujuan-bisnis-menjadi-tujuan-analisis-data">
+<h3>A. Menerjemahkan tujuan bisnis menjadi tujuan analisis data<a class="headerlink" href="#a-menerjemahkan-tujuan-bisnis-menjadi-tujuan-analisis-data" title="Link to this heading">#</a></h3>
+<p>Tujuan bisnis yang masih bersifat umum diubah menjadi tujuan yang lebih spesifik dan teknis, sehingga dapat dikerjakan menggunakan data.</p>
+</section>
+<section id="b-menentukan-apa-yang-ingin-dicari-atau-diprediksi-dari-data">
+<h3>B. Menentukan apa yang ingin dicari atau diprediksi dari data<a class="headerlink" href="#b-menentukan-apa-yang-ingin-dicari-atau-diprediksi-dari-data" title="Link to this heading">#</a></h3>
+<p>Misalnya ingin memprediksi penjualan, mengelompokkan pelanggan, atau menemukan pola tertentu dari data.</p>
+</section>
+<section id="c-menentukan-jenis-metode-data-mining-yang-akan-digunakan">
+<h3>C. Menentukan jenis metode data mining yang akan digunakan<a class="headerlink" href="#c-menentukan-jenis-metode-data-mining-yang-akan-digunakan" title="Link to this heading">#</a></h3>
+<p>Menentukan apakah proyek akan menggunakan klasifikasi, prediksi, clustering, atau metode lainnya sesuai kebutuhan.</p>
+</section>
+<section id="d-menentukan-hasil-yang-diharapkan-dari-proses-data-mining">
+<h3>D. Menentukan hasil yang diharapkan dari proses data mining<a class="headerlink" href="#d-menentukan-hasil-yang-diharapkan-dari-proses-data-mining" title="Link to this heading">#</a></h3>
+<p>Menetapkan output yang jelas, seperti model prediksi, pola data, atau informasi yang dapat membantu pengambilan keputusan.</p>
+</section>
+<section id="e-memastikan-tujuan-data-mining-sesuai-dengan-tujuan-bisnis">
+<h3>E. Memastikan tujuan data mining sesuai dengan tujuan bisnis<a class="headerlink" href="#e-memastikan-tujuan-data-mining-sesuai-dengan-tujuan-bisnis" title="Link to this heading">#</a></h3>
+<p>Agar hasil analisis dapat digunakan untuk membantu menyelesaikan masalah dan mencapai tujuan bisnis.</p>
+</section>
+</section>
+<section id="produce-project-plan">
+<h2>4. Produce Project Plan<a class="headerlink" href="#produce-project-plan" title="Link to this heading">#</a></h2>
+<p>Tujuan proses Produce Project Plan dalam Business Understanding adalah untuk membuat rencana kerja yang jelas dan terstruktur agar proyek data mining atau analisis data dapat berjalan dengan terarah dan sesuai dengan tujuan bisnis.</p>
+<p>Secara rinci, tujuan dari proses Produce Project Plan adalah:</p>
+<section id="a-menentukan-langkah-langkah-yang-akan-dilakukan">
+<h3>A. Menentukan langkah-langkah yang akan dilakukan<a class="headerlink" href="#a-menentukan-langkah-langkah-yang-akan-dilakukan" title="Link to this heading">#</a></h3>
+<p>Menyusun urutan pekerjaan mulai dari pengumpulan data, pengolahan data, analisis, hingga evaluasi hasil.</p>
+</section>
+<section id="b-menentukan-waktu-pelaksanaan-proyek">
+<h3>B. Menentukan waktu pelaksanaan proyek<a class="headerlink" href="#b-menentukan-waktu-pelaksanaan-proyek" title="Link to this heading">#</a></h3>
+<p>Membuat jadwal atau timeline agar setiap tahap proyek dapat diselesaikan tepat waktu.</p>
+</section>
+<section id="c-menentukan-sumber-daya-yang-dibutuhkan">
+<h3>C. Menentukan sumber daya yang dibutuhkan<a class="headerlink" href="#c-menentukan-sumber-daya-yang-dibutuhkan" title="Link to this heading">#</a></h3>
+<p>Menentukan kebutuhan seperti data, software, hardware, dan orang yang terlibat dalam proyek.</p>
+</section>
+<section id="d-menentukan-metode-dan-teknik-yang-akan-digunakan">
+<h3>D.Menentukan metode dan teknik yang akan digunakan<a class="headerlink" href="#d-menentukan-metode-dan-teknik-yang-akan-digunakan" title="Link to this heading">#</a></h3>
+<p>Menentukan metode data mining atau teknik analisis yang sesuai dengan tujuan proyek.</p>
+</section>
+<section id="e-memastikan-proyek-berjalan-terarah-dan-terorganisir">
+<h3>E. Memastikan proyek berjalan terarah dan terorganisir<a class="headerlink" href="#e-memastikan-proyek-berjalan-terarah-dan-terorganisir" title="Link to this heading">#</a></h3>
+<p>Dengan adanya rencana yang jelas, proyek dapat berjalan lebih efektif dan meminimalkan kesalahan.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown-notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="MateriDataUnderstanding.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-business-objectives">1. Determine Business Objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-mengidentifikasi-masalah-bisnis">A. Mengidentifikasi masalah bisnis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-tujuan-yang-ingin-dicapai">B. Menentukan tujuan yang ingin dicapai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menyesuaikan-proyek-dengan-kebutuhan-bisnis">C. Menyesuaikan proyek dengan kebutuhan bisnis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-arah-dan-fokus-proyek">D. Menentukan arah dan fokus proyek</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-menentukan-kriteria-keberhasilan-proyek">E. Menentukan kriteria keberhasilan proyek</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-situation">2. Assess Situation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-memahami-kondisi-organisasi-saat-ini">A. Memahami kondisi organisasi saat ini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-mengetahui-sumber-daya-yang-tersedia">B. Mengetahui sumber daya yang tersedia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-mengetahui-ketersediaan-data">C. Mengetahui ketersediaan data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-mengidentifikasi-risiko-dan-kendala">D. Mengidentifikasi risiko dan kendala</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-menentukan-kelayakan-proyek">E. Menentukan kelayakan proyek</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-data-mining-goals">3.Determine Data Mining Goals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-menerjemahkan-tujuan-bisnis-menjadi-tujuan-analisis-data">A. Menerjemahkan tujuan bisnis menjadi tujuan analisis data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-apa-yang-ingin-dicari-atau-diprediksi-dari-data">B. Menentukan apa yang ingin dicari atau diprediksi dari data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menentukan-jenis-metode-data-mining-yang-akan-digunakan">C. Menentukan jenis metode data mining yang akan digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-hasil-yang-diharapkan-dari-proses-data-mining">D. Menentukan hasil yang diharapkan dari proses data mining</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-memastikan-tujuan-data-mining-sesuai-dengan-tujuan-bisnis">E. Memastikan tujuan data mining sesuai dengan tujuan bisnis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-project-plan">4. Produce Project Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-menentukan-langkah-langkah-yang-akan-dilakukan">A. Menentukan langkah-langkah yang akan dilakukan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-menentukan-waktu-pelaksanaan-proyek">B. Menentukan waktu pelaksanaan proyek</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-menentukan-sumber-daya-yang-dibutuhkan">C. Menentukan sumber daya yang dibutuhkan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-menentukan-metode-dan-teknik-yang-akan-digunakan">D.Menentukan metode dan teknik yang akan digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-memastikan-proyek-berjalan-terarah-dan-terorganisir">E. Memastikan proyek berjalan terarah dan terorganisir</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
