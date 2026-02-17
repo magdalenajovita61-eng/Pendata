@@ -362,7 +362,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,6 +380,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-initial-data">1. Collect Initial Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describe-data">2. Describe Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-data">3. Explore Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-data-quality">4. Verify Data Quality</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -389,7 +402,50 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="materi-data-understanding">
 <h1>Materi Data Understanding<a class="headerlink" href="#materi-data-understanding" title="Link to this heading">#</a></h1>
-<p>Isi materi data understanding kamu di sini…</p>
+<p>Tahap <strong>Data Understanding</strong> bertujuan untuk memahami data yang akan digunakan sebelum masuk ke proses pemodelan.</p>
+<section id="collect-initial-data">
+<h2>1. Collect Initial Data<a class="headerlink" href="#collect-initial-data" title="Link to this heading">#</a></h2>
+<p>Mengumpulkan data awal dari berbagai sumber (database, file CSV, API, dll).</p>
+<p><strong>Output:</strong></p>
+<ul class="simple">
+<li><p>Laporan pengumpulan data awal</p></li>
+<li><p>Sumber data yang digunakan</p></li>
+</ul>
+</section>
+<section id="describe-data">
+<h2>2. Describe Data<a class="headerlink" href="#describe-data" title="Link to this heading">#</a></h2>
+<p>Mendeskripsikan karakteristik data secara umum.</p>
+<p><strong>Contoh:</strong></p>
+<ul class="simple">
+<li><p>Jumlah baris dan kolom</p></li>
+<li><p>Tipe data (numerik, kategorikal)</p></li>
+<li><p>Contoh nilai</p></li>
+</ul>
+</section>
+<section id="explore-data">
+<h2>3. Explore Data<a class="headerlink" href="#explore-data" title="Link to this heading">#</a></h2>
+<p>Eksplorasi data untuk menemukan pola awal.</p>
+<p><strong>Contoh:</strong></p>
+<ul class="simple">
+<li><p>Statistik deskriptif</p></li>
+<li><p>Visualisasi (histogram, boxplot, scatterplot)</p></li>
+<li><p>Deteksi outlier</p></li>
+</ul>
+</section>
+<section id="verify-data-quality">
+<h2>4. Verify Data Quality<a class="headerlink" href="#verify-data-quality" title="Link to this heading">#</a></h2>
+<p>Mengecek kualitas data.</p>
+<p><strong>Contoh masalah:</strong></p>
+<ul class="simple">
+<li><p>Missing value</p></li>
+<li><p>Duplikasi data</p></li>
+<li><p>Data tidak konsisten</p></li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul class="simple">
+<li><p>Laporan kualitas data</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -446,6 +502,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-initial-data">1. Collect Initial Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describe-data">2. Describe Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-data">3. Explore Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-data-quality">4. Verify Data Quality</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

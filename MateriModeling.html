@@ -362,7 +362,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,6 +380,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">1. Select Modeling Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">2. Generate Test Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">3. Build Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">4. Assess Model</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -389,7 +402,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="materi-modeling">
 <h1>Materi Modeling<a class="headerlink" href="#materi-modeling" title="Link to this heading">#</a></h1>
-<p>Isi materi modeling kamu di sini…</p>
+<p>Tahap <strong>Modeling</strong> adalah proses membangun model machine learning.</p>
+<section id="select-modeling-techniques">
+<h2>1. Select Modeling Techniques<a class="headerlink" href="#select-modeling-techniques" title="Link to this heading">#</a></h2>
+<p>Menentukan algoritma yang akan digunakan.</p>
+<p><strong>Contoh:</strong></p>
+<ul class="simple">
+<li><p>Regresi</p></li>
+<li><p>KNN</p></li>
+<li><p>Decision Tree</p></li>
+<li><p>Random Forest</p></li>
+</ul>
+</section>
+<section id="generate-test-design">
+<h2>2. Generate Test Design<a class="headerlink" href="#generate-test-design" title="Link to this heading">#</a></h2>
+<p>Menentukan metode evaluasi.</p>
+<p><strong>Contoh:</strong></p>
+<ul class="simple">
+<li><p>Train-test split</p></li>
+<li><p>Cross-validation</p></li>
+</ul>
+</section>
+<section id="build-model">
+<h2>3. Build Model<a class="headerlink" href="#build-model" title="Link to this heading">#</a></h2>
+<p>Melatih model dengan data training.</p>
+<p><strong>Output:</strong></p>
+<ul class="simple">
+<li><p>Model terlatih</p></li>
+<li><p>Parameter awal</p></li>
+</ul>
+</section>
+<section id="assess-model">
+<h2>4. Assess Model<a class="headerlink" href="#assess-model" title="Link to this heading">#</a></h2>
+<p>Menilai performa model.</p>
+<p><strong>Contoh metrik:</strong></p>
+<ul class="simple">
+<li><p>Akurasi</p></li>
+<li><p>Precision</p></li>
+<li><p>Recall</p></li>
+<li><p>RMSE</p></li>
+</ul>
+<p>Jika performa buruk, lakukan tuning parameter.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -446,6 +500,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">1. Select Modeling Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">2. Generate Test Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">3. Build Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">4. Assess Model</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
