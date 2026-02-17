@@ -1,7 +1,7 @@
 # Welcome to your Jupyter Book
 
-**Nama:** Magdalena Jovita  
-**NIM:** 61-ENG-XXXXX
+**Nama:** Magdalena Jovita Hatuopar
+**NIM:** 240411100078
 
 This is a small sample book to give you a feel for how book content is
 structured.
