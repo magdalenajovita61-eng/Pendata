@@ -1,37 +1,37 @@
 # Materi Data Understanding
 
-Tahap **Data Understanding** bertujuan untuk memahami data yang akan digunakan sebelum masuk ke proses pemodelan.
+Tahap **Data Understanding** merupakan tahap awal dalam metodologi CRISP-DM yang berfokus pada proses memahami data yang akan digunakan dalam proyek data mining atau machine learning. Pada tahap ini, peneliti atau analis belum melakukan pemodelan, melainkan berusaha mengenal karakteristik data secara menyeluruh. Pemahaman data yang baik sangat penting karena kesalahan interpretasi data di tahap awal dapat menyebabkan hasil analisis yang keliru di tahap selanjutnya.
 
-## 1. Collect Initial Data
-Mengumpulkan data awal dari berbagai sumber (database, file CSV, API, dll).
+Tahap ini membantu memastikan bahwa data yang digunakan benar-benar relevan dengan tujuan penelitian serta memiliki kualitas yang memadai untuk dianalisis.
 
-**Output:**
-- Laporan pengumpulan data awal
-- Sumber data yang digunakan
+## Collect Initial Data
 
-## 2. Describe Data
-Mendeskripsikan karakteristik data secara umum.
+Collect Initial Data adalah proses mengumpulkan data dari berbagai sumber yang tersedia. Data dapat berasal dari database internal perusahaan, file CSV atau Excel, API, web scraping, maupun sumber terbuka (open data). Pada tahap ini, penting untuk mendokumentasikan dari mana data diperoleh, bagaimana cara pengambilannya, serta dalam format apa data tersebut disimpan.
 
-**Contoh:**
-- Jumlah baris dan kolom  
-- Tipe data (numerik, kategorikal)  
-- Contoh nilai
+Tujuan utama dari tahap ini adalah untuk mengetahui apakah data yang tersedia sudah mencukupi untuk menjawab permasalahan yang ingin diselesaikan. Selain itu, tahap ini juga membantu peneliti memahami batasan data, misalnya apakah data hanya mencakup periode waktu tertentu, apakah ada data yang tidak lengkap, atau apakah ada batasan akses terhadap data tertentu.
 
-## 3. Explore Data
-Eksplorasi data untuk menemukan pola awal.
+Hasil dari tahap ini biasanya berupa laporan pengumpulan data awal yang berisi daftar sumber data, jumlah data yang berhasil dikumpulkan, serta catatan awal mengenai kondisi data.
 
-**Contoh:**
-- Statistik deskriptif  
-- Visualisasi (histogram, boxplot, scatterplot)  
-- Deteksi outlier
+## Describe Data
 
-## 4. Verify Data Quality
-Mengecek kualitas data.
+Pada tahap Describe Data, data yang telah dikumpulkan dideskripsikan secara umum. Deskripsi ini mencakup struktur dataset, jumlah baris (record), jumlah kolom (atribut), tipe data setiap kolom (numerik, kategorikal, tanggal, dan sebagainya), serta contoh nilai yang terdapat dalam dataset.
 
-**Contoh masalah:**
-- Missing value  
-- Duplikasi data  
-- Data tidak konsisten  
+Tahap ini bertujuan untuk memberikan gambaran awal tentang bentuk dan isi data. Dengan memahami struktur data, peneliti dapat mulai membayangkan teknik analisis atau model apa yang mungkin sesuai digunakan. Selain itu, tahap ini juga membantu dalam mengidentifikasi atribut mana yang berpotensi relevan dengan tujuan analisis.
 
-**Output:**
-- Laporan kualitas data
+Deskripsi data biasanya disajikan dalam bentuk tabel ringkasan atau penjelasan tertulis yang menggambarkan setiap atribut dalam dataset.
+
+## Explore Data
+
+Explore Data merupakan tahap eksplorasi data secara lebih mendalam. Pada tahap ini, dilakukan analisis statistik deskriptif serta visualisasi data untuk menemukan pola, tren, atau keanehan dalam dataset. Eksplorasi data membantu peneliti memahami bagaimana distribusi nilai dalam setiap atribut, apakah terdapat outlier, serta apakah terdapat hubungan tertentu antar variabel.
+
+Beberapa teknik yang umum digunakan pada tahap ini meliputi pembuatan histogram untuk melihat distribusi data, boxplot untuk mendeteksi outlier, serta scatter plot untuk melihat hubungan antar dua variabel. Selain itu, analisis korelasi juga dapat dilakukan untuk mengetahui hubungan antar variabel numerik.
+
+Tujuan utama dari eksplorasi data adalah untuk mendapatkan wawasan awal tentang karakteristik data. Wawasan ini sangat berguna dalam menentukan strategi pembersihan data, pemilihan fitur, serta pemilihan algoritma pada tahap modeling.
+
+## Verify Data Quality
+
+Verify Data Quality bertujuan untuk mengevaluasi kualitas data yang dikumpulkan. Data yang berkualitas buruk dapat menyebabkan model yang dihasilkan menjadi tidak akurat atau menyesatkan. Oleh karena itu, pada tahap ini dilakukan pemeriksaan terhadap berbagai permasalahan umum pada data, seperti nilai yang hilang (missing values), data duplikat, inkonsistensi format, serta kesalahan penulisan.
+
+Selain itu, pada tahap ini juga dievaluasi apakah terdapat data yang tidak masuk akal, misalnya nilai umur negatif atau tanggal yang tidak valid. Semua permasalahan yang ditemukan sebaiknya didokumentasikan agar dapat ditangani pada tahap Data Preparation.
+
+Hasil dari tahap ini biasanya berupa laporan kualitas data yang menjelaskan jenis permasalahan yang ditemukan, tingkat keparahan masalah tersebut, serta rekomendasi awal untuk pembersihan dan perbaikan data.

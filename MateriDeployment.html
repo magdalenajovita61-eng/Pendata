@@ -384,10 +384,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-deployment">1. Plan Deployment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-monitoring-and-maintenance">2. Plan Monitoring and Maintenance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-final-report">3. Produce Final Report</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-project-experience">4. Review Project Experience</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-deployment">Plan Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-monitoring-and-maintenance">Plan Monitoring and Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-final-report">Produce Final Report</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-project-experience">Review Project Experience</a></li>
 </ul>
             </nav>
         </div>
@@ -401,45 +401,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="materi-deployment">
 <h1>Materi Deployment<a class="headerlink" href="#materi-deployment" title="Link to this heading">#</a></h1>
-<p>Tahap <strong>Deployment</strong> adalah penerapan model ke lingkungan nyata.</p>
+<p>Tahap <strong>Deployment</strong> merupakan tahap akhir dalam metodologi CRISP-DM, di mana model yang telah dievaluasi dan dinilai layak akan diterapkan ke dalam lingkungan nyata. Tujuan utama tahap ini adalah memastikan bahwa hasil analisis dapat dimanfaatkan oleh pengguna atau pemangku kepentingan secara langsung.</p>
+<p>Deployment tidak selalu berarti mengintegrasikan model ke dalam sistem produksi yang kompleks. Dalam beberapa kasus, deployment dapat berupa penyusunan laporan, pembuatan dashboard, atau penyampaian rekomendasi kepada pihak terkait.</p>
 <section id="plan-deployment">
-<h2>1. Plan Deployment<a class="headerlink" href="#plan-deployment" title="Link to this heading">#</a></h2>
-<p>Merencanakan bagaimana model digunakan.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Website</p></li>
-<li><p>API</p></li>
-<li><p>Aplikasi internal</p></li>
-</ul>
+<h2>Plan Deployment<a class="headerlink" href="#plan-deployment" title="Link to this heading">#</a></h2>
+<p>Plan Deployment adalah proses perencanaan bagaimana model atau hasil analisis akan digunakan. Perencanaan ini mencakup penentuan media atau platform yang akan digunakan untuk menyampaikan hasil, seperti aplikasi web, API, atau laporan tertulis.</p>
+<p>Pada tahap ini, perlu dipertimbangkan siapa pengguna akhir dari sistem yang dibangun serta bagaimana mereka akan berinteraksi dengan hasil model. Perencanaan yang baik akan membantu memastikan bahwa hasil proyek dapat digunakan secara efektif.</p>
 </section>
 <section id="plan-monitoring-and-maintenance">
-<h2>2. Plan Monitoring and Maintenance<a class="headerlink" href="#plan-monitoring-and-maintenance" title="Link to this heading">#</a></h2>
-<p>Menyiapkan rencana monitoring.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Mengecek performa model secara berkala</p></li>
-<li><p>Update model jika performa menurun</p></li>
-</ul>
+<h2>Plan Monitoring and Maintenance<a class="headerlink" href="#plan-monitoring-and-maintenance" title="Link to this heading">#</a></h2>
+<p>Setelah model diterapkan, penting untuk melakukan pemantauan dan pemeliharaan secara berkala. Kinerja model dapat menurun seiring waktu karena perubahan pola data (concept drift) atau perubahan kebutuhan pengguna. Oleh karena itu, perlu disiapkan mekanisme monitoring untuk memantau performa model secara berkala.</p>
+<p>Selain itu, rencana pemeliharaan juga perlu mencakup strategi pembaruan model, misalnya dengan melatih ulang model menggunakan data terbaru. Dengan adanya monitoring dan maintenance yang baik, model dapat tetap relevan dan bermanfaat dalam jangka panjang.</p>
 </section>
 <section id="produce-final-report">
-<h2>3. Produce Final Report<a class="headerlink" href="#produce-final-report" title="Link to this heading">#</a></h2>
-<p>Membuat laporan akhir proyek.</p>
-<p><strong>Isi laporan:</strong></p>
-<ul class="simple">
-<li><p>Tujuan</p></li>
-<li><p>Metode</p></li>
-<li><p>Hasil</p></li>
-<li><p>Kesimpulan</p></li>
-</ul>
+<h2>Produce Final Report<a class="headerlink" href="#produce-final-report" title="Link to this heading">#</a></h2>
+<p>Produce Final Report bertujuan untuk mendokumentasikan seluruh proses dan hasil proyek dalam bentuk laporan akhir. Laporan ini biasanya mencakup latar belakang permasalahan, metodologi yang digunakan, hasil yang diperoleh, serta kesimpulan dan rekomendasi.</p>
+<p>Laporan akhir berfungsi sebagai dokumentasi resmi proyek serta sebagai referensi bagi pihak lain yang ingin memahami atau mengembangkan proyek lebih lanjut di masa depan.</p>
 </section>
 <section id="review-project-experience">
-<h2>4. Review Project Experience<a class="headerlink" href="#review-project-experience" title="Link to this heading">#</a></h2>
-<p>Mereview pengalaman proyek.</p>
-<p><strong>Tujuan:</strong></p>
-<ul class="simple">
-<li><p>Menjadi pembelajaran untuk proyek berikutnya</p></li>
-<li><p>Dokumentasi pengalaman</p></li>
-</ul>
+<h2>Review Project Experience<a class="headerlink" href="#review-project-experience" title="Link to this heading">#</a></h2>
+<p>Review Project Experience merupakan tahap refleksi terhadap pengalaman selama proyek berlangsung. Pada tahap ini, tim proyek dapat mengevaluasi apa saja yang telah berjalan dengan baik dan apa saja yang perlu diperbaiki. Refleksi ini sangat penting untuk meningkatkan kualitas proses dan hasil pada proyek berikutnya.</p>
+<p>Melalui review pengalaman proyek, pembelajaran yang diperoleh dapat didokumentasikan sehingga dapat menjadi panduan bagi proyek-proyek selanjutnya.</p>
 </section>
 </section>
 
@@ -498,10 +480,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-deployment">1. Plan Deployment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-monitoring-and-maintenance">2. Plan Monitoring and Maintenance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-final-report">3. Produce Final Report</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-project-experience">4. Review Project Experience</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-deployment">Plan Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-monitoring-and-maintenance">Plan Monitoring and Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#produce-final-report">Produce Final Report</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-project-experience">Review Project Experience</a></li>
 </ul>
   </nav></div>
 

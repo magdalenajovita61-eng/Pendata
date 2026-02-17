@@ -385,11 +385,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-data">1. Select Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-data">2. Clean Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construct-data">3. Construct Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-data">4. Integrate Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-data">5. Format Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-data">Select Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-data">Clean Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construct-data">Construct Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-data">Integrate Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-data">Format Data</a></li>
 </ul>
             </nav>
         </div>
@@ -403,48 +403,32 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="materi-data-preparation">
 <h1>Materi Data Preparation<a class="headerlink" href="#materi-data-preparation" title="Link to this heading">#</a></h1>
-<p>Tahap <strong>Data Preparation</strong> berfokus pada menyiapkan data agar siap dipakai untuk modeling.</p>
+<p>Tahap <strong>Data Preparation</strong> merupakan tahap lanjutan setelah Data Understanding yang berfokus pada proses menyiapkan data agar siap digunakan dalam pemodelan. Tahap ini sering kali menjadi tahap yang paling memakan waktu karena melibatkan banyak proses pembersihan, transformasi, dan rekayasa fitur. Data yang belum dipersiapkan dengan baik dapat menyebabkan performa model menjadi buruk.</p>
+<p>Tujuan utama tahap ini adalah menghasilkan dataset akhir yang bersih, konsisten, dan relevan dengan tujuan analisis.</p>
 <section id="select-data">
-<h2>1. Select Data<a class="headerlink" href="#select-data" title="Link to this heading">#</a></h2>
-<p>Memilih data yang relevan dan membuang yang tidak diperlukan.</p>
+<h2>Select Data<a class="headerlink" href="#select-data" title="Link to this heading">#</a></h2>
+<p>Select Data adalah proses memilih data yang benar-benar relevan dengan tujuan proyek. Tidak semua atribut atau record dalam dataset awal selalu diperlukan. Oleh karena itu, pada tahap ini dilakukan seleksi terhadap kolom yang dianggap penting serta penghapusan data yang tidak relevan atau redundan.</p>
+<p>Pemilihan data yang tepat dapat membantu mengurangi kompleksitas model serta meningkatkan performa analisis. Selain itu, dengan mengurangi jumlah atribut yang tidak diperlukan, proses komputasi menjadi lebih efisien.</p>
 </section>
 <section id="clean-data">
-<h2>2. Clean Data<a class="headerlink" href="#clean-data" title="Link to this heading">#</a></h2>
-<p>Membersihkan data dari error.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Mengisi atau menghapus missing value</p></li>
-<li><p>Menghapus duplikat</p></li>
-<li><p>Memperbaiki format salah</p></li>
-</ul>
+<h2>Clean Data<a class="headerlink" href="#clean-data" title="Link to this heading">#</a></h2>
+<p>Clean Data bertujuan untuk membersihkan data dari berbagai permasalahan yang dapat mengganggu proses analisis. Permasalahan tersebut dapat berupa nilai yang hilang, data duplikat, kesalahan input, maupun inkonsistensi format.</p>
+<p>Pada tahap ini, peneliti dapat melakukan berbagai tindakan, seperti menghapus record yang tidak valid, mengisi nilai yang hilang dengan nilai tertentu (misalnya rata-rata atau median), serta memperbaiki kesalahan penulisan. Proses pembersihan data sangat penting karena data yang kotor dapat menyebabkan hasil model menjadi tidak akurat.</p>
 </section>
 <section id="construct-data">
-<h2>3. Construct Data<a class="headerlink" href="#construct-data" title="Link to this heading">#</a></h2>
-<p>Membuat fitur baru (feature engineering).</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Menghitung umur dari tanggal lahir</p></li>
-<li><p>Menggabungkan beberapa kolom</p></li>
-</ul>
+<h2>Construct Data<a class="headerlink" href="#construct-data" title="Link to this heading">#</a></h2>
+<p>Construct Data merupakan proses pembuatan fitur baru (feature engineering) dari data yang sudah ada. Fitur baru ini dapat membantu model dalam menangkap pola yang lebih kompleks. Contohnya adalah mengubah tanggal lahir menjadi umur, menggabungkan beberapa kolom menjadi satu fitur baru, atau mengelompokkan nilai numerik ke dalam kategori tertentu.</p>
+<p>Tahap ini memerlukan pemahaman yang baik terhadap domain permasalahan, karena fitur yang dibuat harus relevan dan bermakna. Feature engineering yang baik sering kali menjadi kunci keberhasilan dalam proyek machine learning.</p>
 </section>
 <section id="integrate-data">
-<h2>4. Integrate Data<a class="headerlink" href="#integrate-data" title="Link to this heading">#</a></h2>
-<p>Menggabungkan data dari berbagai sumber.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Join tabel</p></li>
-<li><p>Merge dataset</p></li>
-</ul>
+<h2>Integrate Data<a class="headerlink" href="#integrate-data" title="Link to this heading">#</a></h2>
+<p>Integrate Data adalah proses menggabungkan data dari beberapa sumber menjadi satu dataset yang utuh. Pada proyek nyata, data sering kali tersebar di berbagai sistem atau file yang berbeda. Oleh karena itu, proses integrasi diperlukan agar data dapat dianalisis secara menyeluruh.</p>
+<p>Proses integrasi harus dilakukan dengan hati-hati untuk menghindari kesalahan penggabungan, seperti duplikasi data atau ketidaksesuaian kunci (key). Integrasi data yang baik akan menghasilkan dataset yang lebih lengkap dan informatif.</p>
 </section>
 <section id="format-data">
-<h2>5. Format Data<a class="headerlink" href="#format-data" title="Link to this heading">#</a></h2>
-<p>Mengubah format data agar sesuai kebutuhan model.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Normalisasi</p></li>
-<li><p>Encoding kategorikal</p></li>
-<li><p>Dataset description</p></li>
-</ul>
+<h2>Format Data<a class="headerlink" href="#format-data" title="Link to this heading">#</a></h2>
+<p>Format Data bertujuan untuk menyesuaikan format data agar sesuai dengan kebutuhan algoritma pemodelan. Beberapa algoritma membutuhkan data dalam skala tertentu atau format numerik. Oleh karena itu, pada tahap ini dapat dilakukan normalisasi atau standarisasi data numerik, serta encoding untuk data kategorikal.</p>
+<p>Hasil akhir dari tahap Data Preparation adalah dataset final yang siap digunakan dalam tahap modeling. Dataset ini sebaiknya disimpan dan didokumentasikan agar dapat digunakan kembali di masa depan.</p>
 </section>
 </section>
 
@@ -512,11 +496,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-data">1. Select Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-data">2. Clean Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construct-data">3. Construct Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-data">4. Integrate Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-data">5. Format Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-data">Select Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-data">Clean Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construct-data">Construct Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-data">Integrate Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-data">Format Data</a></li>
 </ul>
   </nav></div>
 

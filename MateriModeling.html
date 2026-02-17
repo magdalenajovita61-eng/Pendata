@@ -385,10 +385,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">1. Select Modeling Techniques</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">2. Generate Test Design</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">3. Build Model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">4. Assess Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">Select Modeling Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">Generate Test Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">Build Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">Assess Model</a></li>
 </ul>
             </nav>
         </div>
@@ -402,47 +402,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="materi-modeling">
 <h1>Materi Modeling<a class="headerlink" href="#materi-modeling" title="Link to this heading">#</a></h1>
-<p>Tahap <strong>Modeling</strong> adalah proses membangun model machine learning.</p>
+<p>Tahap <strong>Modeling</strong> merupakan tahap inti dalam proses data mining atau machine learning. Pada tahap ini, data yang telah melalui proses persiapan digunakan untuk membangun model yang dapat merepresentasikan pola atau hubungan yang terdapat dalam data. Tujuan utama tahap ini adalah menghasilkan model yang mampu memprediksi atau mengklasifikasikan data baru dengan tingkat akurasi yang baik.</p>
+<p>Pemilihan teknik modeling yang tepat sangat penting karena setiap algoritma memiliki karakteristik, kelebihan, dan keterbatasan masing-masing. Oleh karena itu, tahap modeling biasanya dilakukan secara iteratif, yaitu mencoba beberapa teknik dan membandingkan hasilnya.</p>
 <section id="select-modeling-techniques">
-<h2>1. Select Modeling Techniques<a class="headerlink" href="#select-modeling-techniques" title="Link to this heading">#</a></h2>
-<p>Menentukan algoritma yang akan digunakan.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Regresi</p></li>
-<li><p>KNN</p></li>
-<li><p>Decision Tree</p></li>
-<li><p>Random Forest</p></li>
-</ul>
+<h2>Select Modeling Techniques<a class="headerlink" href="#select-modeling-techniques" title="Link to this heading">#</a></h2>
+<p>Pada tahap ini, peneliti memilih algoritma atau teknik pemodelan yang sesuai dengan jenis permasalahan yang dihadapi. Misalnya, jika permasalahan berupa klasifikasi, maka algoritma yang dapat digunakan antara lain Decision Tree, K-Nearest Neighbor, atau Naive Bayes. Jika permasalahan berupa prediksi nilai kontinu, maka regresi linier atau regresi lainnya dapat digunakan.</p>
+<p>Pemilihan teknik modeling harus mempertimbangkan beberapa aspek, seperti karakteristik data, tujuan analisis, serta kebutuhan interpretabilitas model. Model yang kompleks mungkin memberikan akurasi tinggi, tetapi sulit untuk dijelaskan. Sebaliknya, model yang sederhana lebih mudah dipahami, tetapi mungkin kurang akurat.</p>
 </section>
 <section id="generate-test-design">
-<h2>2. Generate Test Design<a class="headerlink" href="#generate-test-design" title="Link to this heading">#</a></h2>
-<p>Menentukan metode evaluasi.</p>
-<p><strong>Contoh:</strong></p>
-<ul class="simple">
-<li><p>Train-test split</p></li>
-<li><p>Cross-validation</p></li>
-</ul>
+<h2>Generate Test Design<a class="headerlink" href="#generate-test-design" title="Link to this heading">#</a></h2>
+<p>Generate Test Design adalah proses merancang metode pengujian model untuk menilai kinerjanya secara objektif. Pada tahap ini, data biasanya dibagi menjadi data latih (training data) dan data uji (testing data). Selain itu, teknik validasi silang (cross-validation) juga dapat digunakan untuk memperoleh estimasi performa yang lebih stabil.</p>
+<p>Perancangan metode pengujian yang baik sangat penting untuk menghindari overfitting, yaitu kondisi ketika model terlalu menyesuaikan diri dengan data latih sehingga performanya buruk pada data baru. Dengan desain pengujian yang tepat, performa model dapat dievaluasi secara lebih adil dan representatif.</p>
 </section>
 <section id="build-model">
-<h2>3. Build Model<a class="headerlink" href="#build-model" title="Link to this heading">#</a></h2>
-<p>Melatih model dengan data training.</p>
-<p><strong>Output:</strong></p>
-<ul class="simple">
-<li><p>Model terlatih</p></li>
-<li><p>Parameter awal</p></li>
-</ul>
+<h2>Build Model<a class="headerlink" href="#build-model" title="Link to this heading">#</a></h2>
+<p>Build Model merupakan proses melatih model menggunakan data latih. Pada tahap ini, algoritma yang telah dipilih akan mempelajari pola dalam data. Proses ini melibatkan penentuan parameter dan hiperparameter model, yang dapat memengaruhi performa model secara signifikan.</p>
+<p>Setiap model yang dibangun sebaiknya didokumentasikan, termasuk konfigurasi parameter yang digunakan, waktu pelatihan, serta hasil awal yang diperoleh. Dokumentasi ini penting untuk keperluan reproduktibilitas dan perbandingan antar model.</p>
 </section>
 <section id="assess-model">
-<h2>4. Assess Model<a class="headerlink" href="#assess-model" title="Link to this heading">#</a></h2>
-<p>Menilai performa model.</p>
-<p><strong>Contoh metrik:</strong></p>
-<ul class="simple">
-<li><p>Akurasi</p></li>
-<li><p>Precision</p></li>
-<li><p>Recall</p></li>
-<li><p>RMSE</p></li>
-</ul>
-<p>Jika performa buruk, lakukan tuning parameter.</p>
+<h2>Assess Model<a class="headerlink" href="#assess-model" title="Link to this heading">#</a></h2>
+<p>Assess Model bertujuan untuk mengevaluasi performa model yang telah dibangun. Evaluasi dilakukan menggunakan data uji atau metode validasi silang yang telah dirancang sebelumnya. Metrik evaluasi yang digunakan harus sesuai dengan jenis permasalahan, misalnya akurasi, precision, recall, dan F1-score untuk klasifikasi, atau Mean Squared Error (MSE) dan Root Mean Squared Error (RMSE) untuk regresi.</p>
+<p>Hasil evaluasi digunakan untuk menentukan apakah model sudah cukup baik untuk dilanjutkan ke tahap evaluasi bisnis atau perlu dilakukan perbaikan. Jika performa model belum memuaskan, proses modeling dapat diulang dengan teknik atau parameter yang berbeda.</p>
 </section>
 </section>
 
@@ -510,10 +490,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">1. Select Modeling Techniques</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">2. Generate Test Design</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">3. Build Model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">4. Assess Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-modeling-techniques">Select Modeling Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-test-design">Generate Test Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-model">Build Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assess-model">Assess Model</a></li>
 </ul>
   </nav></div>
 
