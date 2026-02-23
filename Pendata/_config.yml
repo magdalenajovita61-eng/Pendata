@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
+title: Pendata - Website Materi Data Mining
+author: Magdalena Jovita Hatuopar
 logo: logo.jpeg
 
 # Force re-execution of notebooks on each build.
@@ -30,3 +30,5 @@ html:
   use_issues_button: true
   use_repository_button: true
   baseurl: "/Pendata"
+  footer: |
+    <p>© 2026 Magdalena Jovita Hatuopar - 240411100078</p>
