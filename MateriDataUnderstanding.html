@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Materi Data Understanding &#8212; My sample book</title>
+    <title>&lt;no title&gt; &#8212; My sample book</title>
   
   
   
@@ -180,12 +180,11 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriBusinessUnderstanding.html">Business Understanding (Pemahaman Bisnis)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi Data Understanding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriDataPreparation.html">Materi Data Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriModeling.html">Materi Modeling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriEvaluation.html">Materi Evaluation</a></li>
@@ -375,7 +374,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Materi Data Understanding</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,12 +383,9 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-initial-data">Collect Initial Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describe-data">Describe Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-data">Explore Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-data-quality">Verify Data Quality</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
+
             </nav>
         </div>
     </div>
@@ -400,35 +396,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="materi-data-understanding">
-<h1>Materi Data Understanding<a class="headerlink" href="#materi-data-understanding" title="Link to this heading">#</a></h1>
-<p>Tahap <strong>Data Understanding</strong> merupakan tahap awal dalam metodologi CRISP-DM yang berfokus pada proses memahami data yang akan digunakan dalam proyek data mining atau machine learning. Pada tahap ini, peneliti atau analis belum melakukan pemodelan, melainkan berusaha mengenal karakteristik data secara menyeluruh. Pemahaman data yang baik sangat penting karena kesalahan interpretasi data di tahap awal dapat menyebabkan hasil analisis yang keliru di tahap selanjutnya.</p>
-<p>Tahap ini membantu memastikan bahwa data yang digunakan benar-benar relevan dengan tujuan penelitian serta memiliki kualitas yang memadai untuk dianalisis.</p>
-<section id="collect-initial-data">
-<h2>Collect Initial Data<a class="headerlink" href="#collect-initial-data" title="Link to this heading">#</a></h2>
-<p>Collect Initial Data adalah proses mengumpulkan data dari berbagai sumber yang tersedia. Data dapat berasal dari database internal perusahaan, file CSV atau Excel, API, web scraping, maupun sumber terbuka (open data). Pada tahap ini, penting untuk mendokumentasikan dari mana data diperoleh, bagaimana cara pengambilannya, serta dalam format apa data tersebut disimpan.</p>
-<p>Tujuan utama dari tahap ini adalah untuk mengetahui apakah data yang tersedia sudah mencukupi untuk menjawab permasalahan yang ingin diselesaikan. Selain itu, tahap ini juga membantu peneliti memahami batasan data, misalnya apakah data hanya mencakup periode waktu tertentu, apakah ada data yang tidak lengkap, atau apakah ada batasan akses terhadap data tertentu.</p>
-<p>Hasil dari tahap ini biasanya berupa laporan pengumpulan data awal yang berisi daftar sumber data, jumlah data yang berhasil dikumpulkan, serta catatan awal mengenai kondisi data.</p>
-</section>
-<section id="describe-data">
-<h2>Describe Data<a class="headerlink" href="#describe-data" title="Link to this heading">#</a></h2>
-<p>Pada tahap Describe Data, data yang telah dikumpulkan dideskripsikan secara umum. Deskripsi ini mencakup struktur dataset, jumlah baris (record), jumlah kolom (atribut), tipe data setiap kolom (numerik, kategorikal, tanggal, dan sebagainya), serta contoh nilai yang terdapat dalam dataset.</p>
-<p>Tahap ini bertujuan untuk memberikan gambaran awal tentang bentuk dan isi data. Dengan memahami struktur data, peneliti dapat mulai membayangkan teknik analisis atau model apa yang mungkin sesuai digunakan. Selain itu, tahap ini juga membantu dalam mengidentifikasi atribut mana yang berpotensi relevan dengan tujuan analisis.</p>
-<p>Deskripsi data biasanya disajikan dalam bentuk tabel ringkasan atau penjelasan tertulis yang menggambarkan setiap atribut dalam dataset.</p>
-</section>
-<section id="explore-data">
-<h2>Explore Data<a class="headerlink" href="#explore-data" title="Link to this heading">#</a></h2>
-<p>Explore Data merupakan tahap eksplorasi data secara lebih mendalam. Pada tahap ini, dilakukan analisis statistik deskriptif serta visualisasi data untuk menemukan pola, tren, atau keanehan dalam dataset. Eksplorasi data membantu peneliti memahami bagaimana distribusi nilai dalam setiap atribut, apakah terdapat outlier, serta apakah terdapat hubungan tertentu antar variabel.</p>
-<p>Beberapa teknik yang umum digunakan pada tahap ini meliputi pembuatan histogram untuk melihat distribusi data, boxplot untuk mendeteksi outlier, serta scatter plot untuk melihat hubungan antar dua variabel. Selain itu, analisis korelasi juga dapat dilakukan untuk mengetahui hubungan antar variabel numerik.</p>
-<p>Tujuan utama dari eksplorasi data adalah untuk mendapatkan wawasan awal tentang karakteristik data. Wawasan ini sangat berguna dalam menentukan strategi pembersihan data, pemilihan fitur, serta pemilihan algoritma pada tahap modeling.</p>
-</section>
-<section id="verify-data-quality">
-<h2>Verify Data Quality<a class="headerlink" href="#verify-data-quality" title="Link to this heading">#</a></h2>
-<p>Verify Data Quality bertujuan untuk mengevaluasi kualitas data yang dikumpulkan. Data yang berkualitas buruk dapat menyebabkan model yang dihasilkan menjadi tidak akurat atau menyesatkan. Oleh karena itu, pada tahap ini dilakukan pemeriksaan terhadap berbagai permasalahan umum pada data, seperti nilai yang hilang (missing values), data duplikat, inkonsistensi format, serta kesalahan penulisan.</p>
-<p>Selain itu, pada tahap ini juga dievaluasi apakah terdapat data yang tidak masuk akal, misalnya nilai umur negatif atau tanggal yang tidak valid. Semua permasalahan yang ditemukan sebaiknya didokumentasikan agar dapat ditangani pada tahap Data Preparation.</p>
-<p>Hasil dari tahap ini biasanya berupa laporan kualitas data yang menjelaskan jenis permasalahan yang ditemukan, tingkat keparahan masalah tersebut, serta rekomendasi awal untuk pembersihan dan perbaikan data.</p>
-</section>
-</section>
+  <p>Eksplorasi_data_iris.ipynb</p>
 
     <script type="text/x-thebe-config">
     {
@@ -493,12 +461,9 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-initial-data">Collect Initial Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describe-data">Describe Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-data">Explore Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-data-quality">Verify Data Quality</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
+
   </nav></div>
 
 </div></div>
