@@ -1,14 +1,10 @@
-# Welcome to your Jupyter Book
+# Pendata – Materi Data Mining
 
 **Nama:** Magdalena Jovita Hatuopar
 **NIM:** 240411100078
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more.
+Selamat datang di website materi **Pendata**.  
+Di sini berisi rangkuman materi proses data mining, mulai dari:
 
 ```{tableofcontents}
 ```
