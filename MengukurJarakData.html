@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Pendata - Website Materi Data Mining</title>
+    <title>Perhitungan Jarak Data Campuran (Python) &#8212; Pendata - Website Materi Data Mining</title>
   
   
   
@@ -180,9 +180,10 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="MateriBusinessUnderstanding.html">Business Understanding (Pemahaman Bisnis)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriDataUnderstanding.html">Materi Data Understanding</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Perhitungan Jarak Data Campuran (Python)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriDataPreparation.html">Materi Data Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriModeling.html">Materi Modeling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriEvaluation.html">Materi Evaluation</a></li>
@@ -359,9 +360,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -372,19 +371,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Perhitungan Jarak Data Campuran (Python)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -394,7 +385,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="perhitungan-jarak-data-campuran-python">
+<h1>Perhitungan Jarak Data Campuran (Python)<a class="headerlink" href="#perhitungan-jarak-data-campuran-python" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sqlalchemy</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -1150,6 +1143,7 @@ Kode tersebut digunakan untuk menghitung jarak antara dua data pada dataset yang
 <p>Selanjutnya, kolom-kolom pada dataset dikelompokkan berdasarkan jenis tipenya. Kolom numerik berisi nilai angka murni seperti umur, jumlah absen, dan nilai ujian. Kolom ordinal berisi angka yang memiliki tingkatan atau urutan, seperti waktu belajar atau tingkat kesehatan. Kolom nominal berisi kategori tanpa urutan seperti jenis sekolah atau jenis kelamin. Sedangkan kolom biner berisi dua kemungkinan nilai seperti yes dan no.</p>
 <p>Program kemudian menghitung jarak untuk setiap tipe data dengan cara yang berbeda. Untuk data nominal, jika nilainya sama maka jaraknya nol, jika berbeda maka jaraknya satu. Untuk data biner simetris, nilai yes diubah menjadi satu dan no menjadi nol, lalu dibandingkan dengan cara yang sama seperti nominal. Untuk data ordinal, nilainya terlebih dahulu dinormalisasi ke skala nol sampai satu berdasarkan nilai minimum dan maksimum pada kolom tersebut, lalu dihitung selisih absolutnya. Untuk data numerik, selisih absolut antara kedua nilai dibagi dengan rentang nilai kolom agar berada pada skala nol sampai satu.</p>
 <p>Setiap hasil jarak dari satu atribut akan ditambahkan ke variabel jumlah jarak, dan setiap atribut yang berhasil dihitung akan menambah jumlah atribut yang dibandingkan. Setelah semua atribut selesai diproses, nilai akhir jarak campuran diperoleh dengan membagi total jarak dengan jumlah atribut yang dihitung. Nilai ini berada pada rentang nol sampai satu, di mana nilai mendekati nol berarti kedua data sangat mirip, sedangkan nilai mendekati satu berarti kedua data semakin berbeda.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1205,21 +1199,6 @@ Kode tersebut digunakan untuk menghitung jarak antara dua data pada dataset yang
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
