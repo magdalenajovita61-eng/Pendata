@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penjelasan : &#8212; Pendata - Website Materi Data Mining</title>
+    <title>&lt;no title&gt; &#8212; Pendata - Website Materi Data Mining</title>
   
   
   
@@ -180,17 +180,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="MateriBusinessUnderstanding.html">Business Understanding (Pemahaman Bisnis)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriDataUnderstanding.html">Materi Data Understanding</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penjelasan :</a></li>
-
-
-
-
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="MateriDataPreparation.html">Materi Data Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriModeling.html">Materi Modeling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriEvaluation.html">Materi Evaluation</a></li>
@@ -380,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penjelasan :</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -389,15 +381,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Penjelasan :</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
 
             </nav>
@@ -593,8 +577,7 @@ document.write(`
 <p>5 rows × 33 columns</p>
 </div></div></div>
 </div>
-<section id="penjelasan">
-<h1>Penjelasan :<a class="headerlink" href="#penjelasan" title="Link to this heading">#</a></h1>
+<p>Penjelasan :</p>
 <p>Kode tersebut digunakan untuk menghubungkan Python dengan database PostgreSQL, mengambil data dari tabel tertentu, lalu menyimpannya ke dalam bentuk dataframe agar bisa dianalisis menggunakan pandas.</p>
 <p>Pertama, fungsi create_engine dari library sqlalchemy digunakan untuk membuat koneksi ke database. Di dalamnya terdapat informasi username, password, alamat server, port, dan nama database, yaitu Pendata. String koneksi tersebut memberitahu Python bagaimana cara terhubung ke PostgreSQL melalui driver psycopg2.</p>
 <p>Setelah koneksi berhasil dibuat dan disimpan dalam variabel engine, perintah pd.read_sql digunakan untuk menjalankan query SQL. Query yang dijalankan adalah mengambil seluruh data dari tabel student_data yang berada di schema public. Hasil dari query tersebut langsung dikonversi menjadi dataframe dan disimpan dalam variabel df.</p>
@@ -658,10 +641,8 @@ Ukuran Dataset (baris, kolom):
 </div>
 </div>
 </div>
-</section>
-<section id="id1">
-<h1>Penjelasan :<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk melihat struktur dan ukuran dataset secara keseluruhan sebelum dilakukan analisis lebih lanjut.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk melihat struktur dan ukuran dataset secara keseluruhan sebelum dilakukan analisis lebih lanjut.</p>
 <p>Perintah print pertama hanya menampilkan judul “Info Dataset” agar output lebih terstruktur. Setelah itu, fungsi <a class="reference external" href="http://df.info">df.info</a>() dijalankan. Fungsi ini menampilkan informasi penting tentang dataframe, seperti jumlah baris, jumlah kolom, nama setiap kolom, jumlah data yang tidak kosong pada tiap kolom, serta tipe data masing-masing kolom apakah berupa integer, float, atau object. Informasi ini sangat berguna untuk mengetahui apakah ada data yang kosong dan untuk memastikan tipe data sudah sesuai dengan kebutuhan analisis.</p>
 <p>Kemudian, perintah print kedua menampilkan judul “Ukuran Dataset (baris, kolom)”. Perintah df.shape digunakan untuk mengetahui dimensi dataset. Hasilnya berupa dua angka, yaitu jumlah baris dan jumlah kolom. Jumlah baris menunjukkan banyaknya data atau observasi, sedangkan jumlah kolom menunjukkan banyaknya variabel atau atribut yang dimiliki dataset.</p>
 <p>Secara keseluruhan, kode ini membantu memahami struktur dasar dataset sebelum melakukan perhitungan jarak, encoding, atau analisis lainnya.</p>
@@ -705,10 +686,8 @@ Name: count, dtype: int64
 </div>
 </div>
 </div>
-</section>
-<section id="id2">
-<h1>Penjelasan :<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk melihat jumlah kelas dan distribusi data pada kolom g3, yang biasanya merepresentasikan nilai akhir siswa.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk melihat jumlah kelas dan distribusi data pada kolom g3, yang biasanya merepresentasikan nilai akhir siswa.</p>
 <p>Perintah print pertama menampilkan judul “Jumlah class” agar output lebih rapi. Kemudian fungsi nunique digunakan pada kolom g3 untuk menghitung berapa banyak nilai unik yang ada di dalamnya. Hasilnya menunjukkan berapa banyak kelas atau kategori nilai yang berbeda pada kolom tersebut.</p>
 <p>Selanjutnya, perintah print kedua menampilkan judul “Jumlah data per class”. Fungsi value_counts digunakan untuk menghitung berapa banyak kemunculan masing-masing nilai pada kolom g3. Dengan kata lain, fungsi ini menunjukkan distribusi frekuensi setiap kelas. Dari hasil ini kita bisa melihat apakah data seimbang atau tidak, misalnya apakah ada nilai tertentu yang jumlahnya jauh lebih banyak dibandingkan yang lain.</p>
 <p>Secara keseluruhan, kode ini membantu memahami struktur target atau label dalam dataset, terutama jika kolom g3 digunakan sebagai variabel klasifikasi dalam analisis atau pemodelan.</p>
@@ -766,10 +745,8 @@ Total missing values:
 </div>
 </div>
 </div>
-</section>
-<section id="id3">
-<h1>Penjelasan :<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk memeriksa apakah terdapat data yang hilang atau kosong di dalam dataset.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk memeriksa apakah terdapat data yang hilang atau kosong di dalam dataset.</p>
 <p>Perintah print pertama menampilkan judul “Missing values per kolom” agar hasil lebih terstruktur. Setelah itu, fungsi isnull digunakan untuk mendeteksi nilai yang kosong pada setiap sel dalam dataframe. Fungsi ini akan menghasilkan nilai benar untuk data yang kosong dan salah untuk data yang terisi. Kemudian fungsi sum dijalankan untuk menghitung jumlah nilai kosong pada setiap kolom. Hasilnya menunjukkan berapa banyak missing values di masing-masing variabel.</p>
 <p>Selanjutnya, perintah print kedua menampilkan judul “Total missing values”. Pada bagian ini, fungsi sum dijalankan dua kali. Penjumlahan pertama menghitung jumlah nilai kosong per kolom, dan penjumlahan kedua menjumlahkan seluruhnya sehingga menghasilkan total keseluruhan missing values dalam dataset.</p>
 <p>Secara keseluruhan, kode ini penting dalam tahap eksplorasi data karena membantu memastikan apakah dataset bersih atau masih memiliki data yang perlu ditangani, misalnya dengan penghapusan data atau pengisian nilai tertentu sebelum analisis lebih lanjut dilakukan.</p>
@@ -788,10 +765,8 @@ Total missing values:
 </div>
 </div>
 </div>
-</section>
-<section id="id4">
-<h1>Penjelasan :<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk memeriksa apakah terdapat data yang duplikat di dalam dataset.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk memeriksa apakah terdapat data yang duplikat di dalam dataset.</p>
 <p>Perintah print pertama hanya menampilkan judul “Jumlah data duplikat” agar hasil output lebih jelas dan terpisah dari bagian lain. Setelah itu, fungsi duplicated digunakan pada dataframe df. Fungsi ini akan memeriksa setiap baris dan menandai apakah baris tersebut merupakan duplikat dari baris sebelumnya. Jika suatu baris memiliki seluruh nilai yang sama persis dengan baris lain, maka akan dianggap sebagai duplikat.</p>
 <p>Kemudian fungsi sum dijalankan untuk menghitung berapa banyak baris yang terdeteksi sebagai duplikat. Hasil akhirnya menunjukkan jumlah total data yang sama persis dan muncul lebih dari satu kali dalam dataset.</p>
 <p>Pemeriksaan ini penting dalam tahap pembersihan data karena data duplikat dapat mempengaruhi hasil analisis, terutama dalam perhitungan statistik, clustering, maupun pembuatan model machine learning.</p>
@@ -1000,10 +975,8 @@ Total missing values:
 </table>
 </div></div></div>
 </div>
-</section>
-<section id="id5">
-<h1>Penjelasan :<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk menampilkan statistik deskriptif dari seluruh kolom numerik dalam dataframe.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk menampilkan statistik deskriptif dari seluruh kolom numerik dalam dataframe.</p>
 <p>Perintah print hanya berfungsi menampilkan judul “Statistik deskriptif” agar output lebih rapi dan mudah dibaca. Setelah itu, fungsi describe dijalankan pada dataframe df. Fungsi ini secara otomatis menghitung ringkasan statistik untuk setiap kolom numerik, seperti jumlah data, nilai rata-rata, standar deviasi, nilai minimum, kuartil pertama, median, kuartil ketiga, dan nilai maksimum.</p>
 <p>Perintah display digunakan agar hasilnya tampil dalam bentuk tabel yang lebih rapi, terutama jika dijalankan di Jupyter Notebook. Jika tidak menggunakan display, sebenarnya cukup dengan menuliskan df.describe() saja.</p>
 <p>Secara keseluruhan, kode ini membantu kita memahami gambaran umum data numerik sebelum melakukan analisis lebih lanjut, seperti melihat sebaran nilai, mendeteksi kemungkinan outlier, atau memahami rentang</p>
@@ -1038,10 +1011,8 @@ Manhattan: 21.0000
 </div>
 </div>
 </div>
-</section>
-<section id="id6">
-<h1>Penjelasan :<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk menghitung jarak antara dua data setelah seluruh variabel kategorikal diubah menjadi bentuk numerik menggunakan teknik one-hot encoding. Pendekatan ini memungkinkan perhitungan jarak Euclidean dan Manhattan dilakukan tanpa memisahkan tipe data seperti pada metode Gower.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk menghitung jarak antara dua data setelah seluruh variabel kategorikal diubah menjadi bentuk numerik menggunakan teknik one-hot encoding. Pendekatan ini memungkinkan perhitungan jarak Euclidean dan Manhattan dilakukan tanpa memisahkan tipe data seperti pada metode Gower.</p>
 <p>Pertama, dataset diubah menggunakan fungsi get_dummies. Proses ini mengubah semua variabel kategorikal menjadi beberapa kolom biner bernilai nol dan satu. Misalnya, jika sebuah kolom memiliki tiga kategori, maka akan dibuat beberapa kolom baru yang menunjukkan keberadaan masing-masing kategori. Opsi drop_first bernilai true digunakan untuk menghindari duplikasi informasi yang tidak perlu.</p>
 <p>Setelah itu, seluruh data dikonversi menjadi tipe float agar bisa dihitung secara matematis. Hal ini penting karena perhitungan jarak dengan numpy hanya dapat dilakukan pada data numerik.</p>
 <p>Kemudian, dua baris pertama dari dataset yang sudah diubah diambil sebagai vektor p dan q. Kedua vektor ini berisi seluruh nilai atribut dalam bentuk angka sehingga bisa langsung dikurangkan satu sama lain.</p>
@@ -1173,15 +1144,12 @@ Interpretasi: Kedua data sangat mirip.
 </div>
 </div>
 </div>
-</section>
-<section id="id7">
-<h1>Penjelasan :<a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-<p>Kode tersebut digunakan untuk menghitung jarak antara dua data pada dataset yang memiliki tipe atribut campuran, yaitu numerik, ordinal, nominal, dan biner. Perhitungan ini mengikuti konsep Gower Distance, yaitu metode yang memang dirancang untuk menghitung jarak pada data dengan berbagai tipe sekaligus dalam satu perhitungan.</p>
+<p>Penjelasan :
+Kode tersebut digunakan untuk menghitung jarak antara dua data pada dataset yang memiliki tipe atribut campuran, yaitu numerik, ordinal, nominal, dan biner. Perhitungan ini mengikuti konsep Gower Distance, yaitu metode yang memang dirancang untuk menghitung jarak pada data dengan berbagai tipe sekaligus dalam satu perhitungan.</p>
 <p>Pertama, program mengambil dua baris data dari dataframe. Kedua data ini kemudian disimpan dalam variabel data satu dan data dua. Semua perhitungan selanjutnya adalah proses membandingkan setiap atribut dari kedua data tersebut.</p>
 <p>Selanjutnya, kolom-kolom pada dataset dikelompokkan berdasarkan jenis tipenya. Kolom numerik berisi nilai angka murni seperti umur, jumlah absen, dan nilai ujian. Kolom ordinal berisi angka yang memiliki tingkatan atau urutan, seperti waktu belajar atau tingkat kesehatan. Kolom nominal berisi kategori tanpa urutan seperti jenis sekolah atau jenis kelamin. Sedangkan kolom biner berisi dua kemungkinan nilai seperti yes dan no.</p>
 <p>Program kemudian menghitung jarak untuk setiap tipe data dengan cara yang berbeda. Untuk data nominal, jika nilainya sama maka jaraknya nol, jika berbeda maka jaraknya satu. Untuk data biner simetris, nilai yes diubah menjadi satu dan no menjadi nol, lalu dibandingkan dengan cara yang sama seperti nominal. Untuk data ordinal, nilainya terlebih dahulu dinormalisasi ke skala nol sampai satu berdasarkan nilai minimum dan maksimum pada kolom tersebut, lalu dihitung selisih absolutnya. Untuk data numerik, selisih absolut antara kedua nilai dibagi dengan rentang nilai kolom agar berada pada skala nol sampai satu.</p>
 <p>Setiap hasil jarak dari satu atribut akan ditambahkan ke variabel jumlah jarak, dan setiap atribut yang berhasil dihitung akan menambah jumlah atribut yang dibandingkan. Setelah semua atribut selesai diproses, nilai akhir jarak campuran diperoleh dengan membagi total jarak dengan jumlah atribut yang dihitung. Nilai ini berada pada rentang nol sampai satu, di mana nilai mendekati nol berarti kedua data sangat mirip, sedangkan nilai mendekati satu berarti kedua data semakin berbeda.</p>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1246,15 +1214,7 @@ Interpretasi: Kedua data sangat mirip.
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Penjelasan :</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Penjelasan :</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
 
   </nav></div>
