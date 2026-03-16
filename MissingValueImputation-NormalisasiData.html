@@ -188,7 +188,6 @@
 <li class="toctree-l1"><a class="reference internal" href="MateriEvaluation.html">Materi Evaluation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MateriDeployment.html">Materi Deployment</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Proyek Missing Values Inputation + Materi Normalisasi data</a></li>
-
 </ul>
 
     </div>
@@ -384,16 +383,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proyek Missing Values Inputation + Materi Normalisasi data</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value-imputation">1, Missing Value Imputation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-weighted-k-nearest-neighbor-wknn">2. Metode Weighted K-Nearest Neighbor (WKNN)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-menggunakan-microsoft-excel">3. Hitungan Menggunakan Microsoft Excel</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-menggunakan-python">4. Perhitungan Menggunakan Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">2. Normalisasi Data</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">2. Normalisasi Data</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -704,9 +699,8 @@ Hasil imputasi Outcome s4 = 0
 <p>Program diawali dengan membaca dataset diabetes dan mengambil 10 data pertama. Selanjutnya dilakukan normalisasi Min-Max pada atribut Pregnancies, Glucose, BMI, dan Age, sedangkan Outcome tetap dalam bentuk kelas asli. Setelah itu dibuat missing value pada BMI data ke-8 dan Outcome data ke-4. Nilai K ditentukan dengan rumus akar jumlah data, sehingga diperoleh K = 3. Program kemudian menghitung jarak Euclidean antara data yang memiliki missing value dengan data lain, lalu menghitung bobot menggunakan rumus
 w=1/d. Untuk imputasi BMI, nilai pengganti dihitung dengan rata-rata berbobot dari K tetangga terdekat. Untuk imputasi Outcome, hasil ditentukan berdasarkan jumlah bobot terbesar dari masing-masing kelas pada K tetangga terdekat. Terakhir, nilai hasil imputasi dimasukkan kembali ke dalam dataset sehingga data menjadi lengkap.</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="normalisasi-data">
-<h1>2. Normalisasi Data<a class="headerlink" href="#normalisasi-data" title="Link to this heading">#</a></h1>
+<section id="normalisasi-data">
+<h2>2. Normalisasi Data<a class="headerlink" href="#normalisasi-data" title="Link to this heading">#</a></h2>
 <p>##Pengertian Normalisasi Data</p>
 <p>Normalisasi data adalah proses mengubah skala nilai data menjadi rentang tertentu tanpa mengubah informasi utama dari data tersebut.</p>
 <p>Normalisasi biasanya digunakan dalam machine learning untuk:</p>
@@ -1717,6 +1711,7 @@ Vector normalization adalah metode normalisasi yang mengubah data sehingga panja
 </div></div>
 </div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1773,16 +1768,12 @@ Vector normalization adalah metode normalisasi yang mengubah data sehingga panja
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proyek Missing Values Inputation + Materi Normalisasi data</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value-imputation">1, Missing Value Imputation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-weighted-k-nearest-neighbor-wknn">2. Metode Weighted K-Nearest Neighbor (WKNN)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-menggunakan-microsoft-excel">3. Hitungan Menggunakan Microsoft Excel</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-menggunakan-python">4. Perhitungan Menggunakan Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">2. Normalisasi Data</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">2. Normalisasi Data</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
