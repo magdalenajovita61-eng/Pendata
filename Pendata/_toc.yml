@@ -6,7 +6,9 @@ root: intro
 chapters:
 - file: MateriBusinessUnderstanding
 - file: MateriDataUnderstanding
+- file: MengukurJarakData
 - file: MateriDataPreparation
 - file: MateriModeling
 - file: MateriEvaluation
 - file: MateriDeployment
+- file: MissingValueImputation-NormalisasiData
